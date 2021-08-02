@@ -1,5 +1,6 @@
 package com.testcase.tc;
 
+
 import org.testng.annotations.Test;
 
 import com.webapp.base.Dashboard;
@@ -35,6 +36,8 @@ public class UserTest extends BaseTest {
 		User del =page.getInstance(User.class).userlist();
 		String d = del.getPageTitle();
 		System.out.println("User deleted" + d);
+		sleep();
+		
 	}
 	
 }
