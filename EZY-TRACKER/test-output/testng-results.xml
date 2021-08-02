@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="73284" started-at="2021-08-02T10:19:45Z" finished-at="2021-08-02T10:20:58Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="73284" started-at="2021-08-02T10:19:45Z" finished-at="2021-08-02T10:20:58Z">
+      <class name="com.testcase.tc.UserTest">
+        <test-method status="PASS" signature="setUpTest(java.lang.String)[pri:0, instance:com.testcase.tc.UserTest@15975490]" name="setUpTest" is-config="true" duration-ms="23497" started-at="2021-08-02T15:49:45Z" finished-at="2021-08-02T15:50:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method status="PASS" signature="doUserTest()[pri:1, instance:com.testcase.tc.UserTest@15975490]" name="doUserTest" duration-ms="12749" started-at="2021-08-02T15:50:09Z" finished-at="2021-08-02T15:50:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doUserTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.testcase.tc.UserTest@15975490]" name="tearDown" is-config="true" duration-ms="984" started-at="2021-08-02T15:50:21Z" finished-at="2021-08-02T15:50:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUpTest(java.lang.String)[pri:0, instance:com.testcase.tc.UserTest@15975490]" name="setUpTest" is-config="true" duration-ms="14255" started-at="2021-08-02T15:50:22Z" finished-at="2021-08-02T15:50:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method status="PASS" signature="deleteUser()[pri:2, instance:com.testcase.tc.UserTest@15975490]" name="deleteUser" duration-ms="20813" started-at="2021-08-02T15:50:37Z" finished-at="2021-08-02T15:50:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteUser -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.testcase.tc.UserTest@15975490]" name="tearDown" is-config="true" duration-ms="935" started-at="2021-08-02T15:50:58Z" finished-at="2021-08-02T15:50:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.testcase.tc.UserTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite  thread-count="2" name="Suite" parallel="tests" verbose="3">
+
+
+
+<listeners>
+		<listener class-name="com.qa.ExtentListener.ExtentReporterNG" />
+	</listeners>
+	
+  <test name="Test" parallel="methods" thread-count="5">
+  
+  <parameter name="browser" value="chrome" />
+    <classes>
+   
+    <class name="com.testcase.tc.UserTest"/>
+      
+ <!-- 
+    <class name="com.testcase.tc.LoginTest"/>
+     
+      <class name="com.testcase.tc.DashboardTest"/>
+      <class name="com.testcase.tc.CompanyTest"/>
+     
+  -->     
+      
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

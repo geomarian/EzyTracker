@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" verbose="3" name="Failed suite [Suite]" parallel="tests">
+  <parameter name="browser" value="chrome"/>
+  <listeners>
+    <listener class-name="com.qa.ExtentListener.ExtentReporterNG"/>
+  </listeners>
+  <test thread-count="5" name="Test" parallel="methods">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.testcase.tc.UserTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Failed suite [Suite] -->
