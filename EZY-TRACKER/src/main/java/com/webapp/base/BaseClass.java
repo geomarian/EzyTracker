@@ -1,5 +1,7 @@
 package com.webapp.base;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -15,7 +17,16 @@ public class BaseClass extends Page {
 		// TODO Auto-generated constructor stub
 		super(driver);
 	}
-
+	
+	// Sleep time
+	public static void sleep(){
+		try{
+			TimeUnit.SECONDS.sleep(3);
+		} catch(InterruptedException ie){
+			Thread.currentThread().interrupt();
+		}
+	}
+	
 	@Override
 
 	public String getPageTitle() {

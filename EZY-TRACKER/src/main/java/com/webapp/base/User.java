@@ -148,11 +148,11 @@ public class User extends BaseClass {
 	//
 
 	public User UserDetail(String addName, String UserName, String Address, String MobileNo, String Passwords,
-			String CPassword) throws InterruptedException {
+			String CPassword) {
 		getClickUser().click();
-		Thread.sleep(2000);
+		sleep();
 		getAddUser().click();
-
+		sleep();
 		getAddName().sendKeys(addName);
 		getMobileNo().sendKeys(UserName);
 		getUserName().sendKeys(Address);
@@ -163,15 +163,16 @@ public class User extends BaseClass {
 		getSubmitBtn().click();
 		return getInstance(User.class);
 	}
-		//navigate to list
-		public User userlist() throws InterruptedException{
-			getClickUser().click();
-		Thread.sleep(3000);
+
+	// navigate to list
+	public User userlist() {
+		getClickUser().click();
+		sleep();
 		getDeleteUser().click();
-		Thread.sleep(3000);
+		sleep();
 		System.out.println("clicked on delete");
 		getDeleteUserYes().click();
-		Thread.sleep(3000);
+		sleep();
 		//
 		return getInstance(User.class);
 	}

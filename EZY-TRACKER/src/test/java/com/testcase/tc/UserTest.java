@@ -9,7 +9,7 @@ import com.webapp.base.User;
 public class UserTest extends BaseTest {
 	
 	@Test(priority=1)
-	public void doUserTest() throws InterruptedException{
+	public void doUserTest() {
 	Dashboard homepage = page.getInstance(Login.class).doLogin(prop.getProperty("ACode"), prop.getProperty("UN"), prop.getProperty("Pwd"));
 	//it will check whether will get dashboard header
 	String headerHome = homepage.getDashboardHeader();
@@ -26,7 +26,7 @@ public class UserTest extends BaseTest {
 	}
 	
 	@Test(priority=2)
-	public void deleteUser() throws InterruptedException{
+	public void deleteUser() {
 		Dashboard homepage = page.getInstance(Login.class).doLogin(prop.getProperty("ACode"), prop.getProperty("UN"), prop.getProperty("Pwd"));
 		//it will check whether will get dashboard header
 		String headerHome = homepage.getDashboardHeader();
