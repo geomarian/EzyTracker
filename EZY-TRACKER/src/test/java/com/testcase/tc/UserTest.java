@@ -43,7 +43,7 @@ public class UserTest extends BaseTest {
 		String d = del.getPageTitle();
 		System.out.println("User deleted" + d);
 		sleep();
-		// Get all the table row elements from the table
+		// Get all the table row list elements from the table
 
 		List<WebElement> allRows = driver.findElements(By.xpath("//table[@id='tblUserList']"));
 
