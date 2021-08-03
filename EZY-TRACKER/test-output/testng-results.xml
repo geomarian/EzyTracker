@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="67828" started-at="2021-08-03T04:47:53Z" finished-at="2021-08-03T04:49:01Z">
+  <suite name="Suite" duration-ms="43105" started-at="2021-08-03T10:21:47Z" finished-at="2021-08-03T10:22:30Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="67828" started-at="2021-08-03T04:47:53Z" finished-at="2021-08-03T04:49:01Z">
-      <class name="com.testcase.tc.UserTest">
-        <test-method status="PASS" signature="setUpTest(java.lang.String)[pri:0, instance:com.testcase.tc.UserTest@15975490]" name="setUpTest" is-config="true" duration-ms="14378" started-at="2021-08-03T10:17:53Z" finished-at="2021-08-03T10:18:08Z">
+    <test name="Test" duration-ms="43105" started-at="2021-08-03T10:21:47Z" finished-at="2021-08-03T10:22:30Z">
+      <class name="com.testcase.tc.SKUTest">
+        <test-method status="PASS" signature="setUpTest(java.lang.String)[pri:0, instance:com.testcase.tc.SKUTest@15975490]" name="setUpTest" is-config="true" duration-ms="16248" started-at="2021-08-03T15:51:47Z" finished-at="2021-08-03T15:52:03Z">
           <params>
             <param index="0">
               <value>
@@ -18,34 +18,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpTest -->
-        <test-method status="PASS" signature="doUserTest()[pri:1, instance:com.testcase.tc.UserTest@15975490]" name="doUserTest" duration-ms="19002" started-at="2021-08-03T10:18:08Z" finished-at="2021-08-03T10:18:27Z">
+        <test-method status="PASS" signature="newSKU()[pri:1, instance:com.testcase.tc.SKUTest@15975490]" name="newSKU" duration-ms="25485" started-at="2021-08-03T15:52:03Z" finished-at="2021-08-03T15:52:28Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- doUserTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.testcase.tc.UserTest@15975490]" name="tearDown" is-config="true" duration-ms="962" started-at="2021-08-03T10:18:27Z" finished-at="2021-08-03T10:18:28Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUpTest(java.lang.String)[pri:0, instance:com.testcase.tc.UserTest@15975490]" name="setUpTest" is-config="true" duration-ms="12958" started-at="2021-08-03T10:18:28Z" finished-at="2021-08-03T10:18:41Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpTest -->
-        <test-method status="PASS" signature="deleteUser()[pri:2, instance:com.testcase.tc.UserTest@15975490]" name="deleteUser" duration-ms="19577" started-at="2021-08-03T10:18:41Z" finished-at="2021-08-03T10:19:00Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- deleteUser -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.testcase.tc.UserTest@15975490]" name="tearDown" is-config="true" duration-ms="914" started-at="2021-08-03T10:19:00Z" finished-at="2021-08-03T10:19:01Z">
+        </test-method> <!-- newSKU -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.testcase.tc.SKUTest@15975490]" name="tearDown" is-config="true" duration-ms="1323" started-at="2021-08-03T15:52:28Z" finished-at="2021-08-03T15:52:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.testcase.tc.UserTest -->
+      </class> <!-- com.testcase.tc.SKUTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

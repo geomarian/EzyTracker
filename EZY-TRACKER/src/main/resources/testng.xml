@@ -12,15 +12,18 @@
   
   <parameter name="browser" value="chrome" />
     <classes>
-   
-    <class name="com.testcase.tc.UserTest"/>
+     <class name="com.testcase.tc.SKUTest"/>
+    
       
  <!-- 
     <class name="com.testcase.tc.LoginTest"/>
      
       <class name="com.testcase.tc.DashboardTest"/>
       <class name="com.testcase.tc.CompanyTest"/>
+     <class name="com.testcase.tc.UserTest"/>
      
+     
+  
   -->     
       
     </classes>

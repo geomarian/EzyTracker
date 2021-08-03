@@ -43,6 +43,21 @@ public class UserTest extends BaseTest {
 		String d = del.getPageTitle();
 		System.out.println("User deleted" + d);
 		sleep();
+	}
+	
+	@Test(priority = 3)
+	
+	public void showUserlist(){
+		
+		Dashboard homepage = page.getInstance(Login.class).doLogin(prop.getProperty("ACode"), prop.getProperty("UN"),
+				prop.getProperty("Pwd"));
+		// it will check whether will get dashboard header
+		String headerHome = homepage.getDashboardHeader();
+		System.out.println(headerHome);
+		
+		User display = page.getInstance(User.class).userlist();
+		String d = display.getPageTitle();
+		System.out.println("List is Displayed..." + d);
 		// Get all the table row list elements from the table
 
 		List<WebElement> allRows = driver.findElements(By.xpath("//table[@id='tblUserList']"));
@@ -56,7 +71,7 @@ public class UserTest extends BaseTest {
 
 				System.out.println(cell.getText());
 			}
-			System.out.println("List is Displayed...");
+			
 		}
 	}
 }
