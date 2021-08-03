@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="43105" started-at="2021-08-03T10:21:47Z" finished-at="2021-08-03T10:22:30Z">
+  <suite name="Suite" duration-ms="36064" started-at="2021-08-03T11:41:39Z" finished-at="2021-08-03T11:42:15Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="43105" started-at="2021-08-03T10:21:47Z" finished-at="2021-08-03T10:22:30Z">
+    <test name="Test" duration-ms="36064" started-at="2021-08-03T11:41:39Z" finished-at="2021-08-03T11:42:15Z">
       <class name="com.testcase.tc.SKUTest">
-        <test-method status="PASS" signature="setUpTest(java.lang.String)[pri:0, instance:com.testcase.tc.SKUTest@15975490]" name="setUpTest" is-config="true" duration-ms="16248" started-at="2021-08-03T15:51:47Z" finished-at="2021-08-03T15:52:03Z">
+        <test-method status="PASS" signature="setUpTest(java.lang.String)[pri:0, instance:com.testcase.tc.SKUTest@15975490]" name="setUpTest" is-config="true" duration-ms="16071" started-at="2021-08-03T17:11:39Z" finished-at="2021-08-03T17:11:55Z">
           <params>
             <param index="0">
               <value>
@@ -18,11 +18,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpTest -->
-        <test-method status="PASS" signature="newSKU()[pri:1, instance:com.testcase.tc.SKUTest@15975490]" name="newSKU" duration-ms="25485" started-at="2021-08-03T15:52:03Z" finished-at="2021-08-03T15:52:28Z">
+        <test-method status="PASS" signature="newSKU()[pri:1, instance:com.testcase.tc.SKUTest@15975490]" name="newSKU" duration-ms="19032" started-at="2021-08-03T17:11:55Z" finished-at="2021-08-03T17:12:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- newSKU -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.testcase.tc.SKUTest@15975490]" name="tearDown" is-config="true" duration-ms="1323" started-at="2021-08-03T15:52:28Z" finished-at="2021-08-03T15:52:30Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.testcase.tc.SKUTest@15975490]" name="tearDown" is-config="true" duration-ms="914" started-at="2021-08-03T17:12:14Z" finished-at="2021-08-03T17:12:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
