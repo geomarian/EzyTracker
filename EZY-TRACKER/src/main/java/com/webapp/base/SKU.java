@@ -5,9 +5,15 @@ package com.webapp.base;
 
 
 
+import java.util.List;
+import java.util.concurrent.ThreadLocalRandom;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 /**
  * @author Geo
@@ -27,17 +33,66 @@ public class SKU extends BaseClass {
 	By radioBtn1 = By.xpath("//input[@name='jApplicableFor' and @type='radio' and @value='1']");
 
 	By radioBtn2 = By.xpath("//input[@name='jApplicableFor' and @type='radio' and @value='2']");
+	
+	By GST = By.xpath("//span[@id='select2-gst-drp-dwn-container']");
+//	 static String gst_xpath = "//span[@title='5%']";
+//	
+	
+	By selectedGST = By.xpath("//span[@id='select2-gst-drp-dwn-container' and @title='222%']");
+	
+	
+	/**
+	 * @return the selectedGST
+	 */
+//	public WebElement getSelectedGST() {
+//		return getElement(selectedGST);
+//	}
+
+	public WebElement getGST() {
+		return getElement(GST);
+	}
+	
+	/*
+	 * Dropdown xpath
+	 * 
+	
+	
+	
+	
+	/**
+	 * @return the gST
+	 
+	
+//	
+	public WebElement getSelectedGST(){
+		return getElement(selectedGST);
+	}
 
 	/**
-	 * @return the radioBtn2
+	 * @return the hSNNo
 	 */
+	public WebElement getHSNNo() {
+		return getElement(HSNNo);
+	}
 
+	By HSNNo = By.xpath("//span[@class='select2-selection select2-selection--single' and @tabindex='7']");
+	
+	
+	/*
+	 * dd xpath
+	 */
+	
 	/**
 	 * @return the clickSKU
 	 */
 	public WebElement getClickSKU() {
 		return getElement(clickSKU);
 	}
+
+	/**
+	 * @param selectedGST the selectedGST to set
+	 */
+
 
 	/**
 	 * @return the header
@@ -70,27 +125,61 @@ public class SKU extends BaseClass {
 		return getPageHeader(header);
 	}
 
+	/*
+	 * here dropdown code
+	 * 
+	 */
+	
+	
+	/*
+	 * dropdown code ends 
+	 */
+	
+	
+	
 	public SKU SKUDetails() {
 		getClickSKU().click();
 		System.out.println("SKU is clicked");
 		getAddSKU().click();
-
+sleep();
 		// select radio button
 
 		if ((clickRadio1().isSelected())) {
 			clickRadio1().click();
-			System.out.println(" 1st radio button is selected:   ");
+			System.out.println(" 1st radio button is selected: ");
 		}
-
+		else{
 		clickRadio2().isSelected();
 		clickRadio2().click();
 		System.out.println(" 2nd radio button is selected: ");
-
+		}
 		sleep();
-
+	
+		//dropdown
+	getGST().click();
+		sleep();
+	
+			/*Selenium Select class is works for HTML <select> tag.
+		 * The Select class only works with <select> tags that contain <option> tags. 
+		 * If did any other tag, it doesn't matter if it behaves like a <select> would, it will be rejected.
+		 */
+		WebElement selectedGST = 
+				driver.findElement(By.xpath("//span[@class='select2-selection__rendered']"));
+		//selectedGST.click();
+	//List<WebElement> options =selectedGST.findElements(By.xpath("//span[@id='select2-gst-drp-dwn-container' and @title='222%']"));
+	
+		
+		dropdown(selectedGST,"28%");
+		
+	
+	
+	
 		return getInstance(SKU.class);
-
 	}
+		
+	
+
+		
 
 	public SKU SKUList() {
 		getClickSKU().click();

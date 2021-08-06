@@ -7,25 +7,36 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 import org.openqa.selenium.support.ui.ExpectedConditions;
-
-
+import org.openqa.selenium.support.ui.Select;
 
 public class BaseClass extends Page {
-	
-	
+
 	public BaseClass(WebDriver driver) {
 		// TODO Auto-generated constructor stub
 		super(driver);
 	}
-	
+
 	// Sleep time
-	public static void sleep(){
-		try{
+	public static void sleep() {
+		try {
 			TimeUnit.SECONDS.sleep(3);
-		} catch(InterruptedException ie){
+		} catch (InterruptedException ie) {
 			Thread.currentThread().interrupt();
 		}
 	}
+
+	/*
+	 * dropdown options
+	 */
+	
+	public static void dropdown(WebElement element, String value){
+		
+		Select objSelect = new Select(element);
+		
+		objSelect.selectByVisibleText(value);
+	}
+
+	
 	
 	@Override
 
@@ -43,7 +54,7 @@ public class BaseClass extends Page {
 
 	@Override
 	public WebElement getElement(By locator) {
-		
+
 		WebElement element = null;
 		try {
 			// apply Wait before getting element

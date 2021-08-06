@@ -3,6 +3,8 @@
  */
 package com.testcase.tc;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 
 import com.webapp.base.Dashboard;
@@ -23,13 +25,11 @@ public class SKUTest extends BaseTest {
 		String headerHome = homepage.getDashboardHeader();
 		System.out.println(headerHome);
 
+
 		SKU skus = page.getInstance(SKU.class).SKUDetails();
 		sleep();
 		String com = skus.getPageTitle();
 
-		// WebElement r =
-		// driver.findElements(By.xpath("//input[@name='jApplicableFor' and
-		// @type='radio' and @value='2']"))
 		System.out.println(com);
 
 	}
@@ -41,7 +41,8 @@ public class SKUTest extends BaseTest {
 		// it will check whether will get dashboard header
 		String headerHome = homepage.getDashboardHeader();
 		System.out.println(headerHome);
-
+sleep();
+		
 		SKU skuList = page.getInstance(SKU.class).SKUList();
 
 		String title = skuList.getPageTitle();

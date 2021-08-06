@@ -3,12 +3,16 @@ package com.testcase.tc;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.List;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.Reporter;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -22,7 +26,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseTest {
 
-	WebDriver driver;
+	 WebDriver driver;
 
 	// we added page here so that we can inherit this pgae class refernece in
 	// login test & others
@@ -43,6 +47,9 @@ public class BaseTest {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+		
+		//Dropdown
+	
 	}
 
 	// Sleep time
@@ -53,6 +60,17 @@ public class BaseTest {
 				Thread.currentThread().interrupt();
 			}
 		}
+		//
+		/*
+		 * 
+		 * Select drop down
+		 * 
+		 * 
+		 */
+	
+		
+		
+		
 	@BeforeMethod
 	// getting browser from testng
 	@Parameters(value = { "browser" })

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>8/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Aug 03 17:11:39 IST 2021</td>
+<td>Started on:</td><td>Fri Aug 06 12:01:34 IST 2021</td>
 </tr>
-<tr><td>Total time:</td><td>36 seconds (36064 ms)</td>
+<tr><td>Total time:</td><td>331 seconds (331416 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,62 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.testcase.tc.SKUTest.newSKU()'><b>newSKU</b><br>Test class: com.testcase.tc.SKUTest</td>
+<td><div><pre>org.openqa.selenium.support.ui.UnexpectedTagNameException: Element should have been &quot;select&quot; but was &quot;span&quot;
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;GEO&apos;, ip: &apos;192.168.1.8&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.&lt;init&gt;(Select.java:47)
+	at com.webapp.base.BaseClass.dropdown(BaseClass.java:34)
+	at com.webapp.base.SKU.SKUDetails(SKU.java:172)
+	at com.testcase.tc.SKUTest.newSKU(SKUTest.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div><a href='#' onClick='toggleBox("stack-trace33439838", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace33439838'><pre>org.openqa.selenium.support.ui.UnexpectedTagNameException: Element should have been &quot;select&quot; but was &quot;span&quot;
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;GEO&apos;, ip: &apos;192.168.1.8&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.&lt;init&gt;(Select.java:47)
+	at com.webapp.base.BaseClass.dropdown(BaseClass.java:34)
+	at com.webapp.base.SKU.SKUDetails(SKU.java:172)
+	at com.testcase.tc.SKUTest.newSKU(SKUTest.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>44</td>
+<td>com.testcase.tc.SKUTest@3cbbc1e0</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -75,10 +131,45 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.testcase.tc.SKUTest.newSKU()'><b>newSKU</b><br>Test class: com.testcase.tc.SKUTest</td>
+<td title='com.testcase.tc.ConfigurationTest.ConfigTest()'><b>ConfigTest</b><br>Test class: com.testcase.tc.ConfigurationTest</td>
+<td></td>
+<td>31</td>
+<td>com.testcase.tc.ConfigurationTest@617c74e5</td></tr>
+<tr>
+<td title='com.testcase.tc.UserTest.deleteUser()'><b>deleteUser</b><br>Test class: com.testcase.tc.UserTest</td>
+<td></td>
+<td>22</td>
+<td>com.testcase.tc.UserTest@6df97b55</td></tr>
+<tr>
+<td title='com.testcase.tc.CompanyTest.doCompanyTest()'><b>doCompanyTest</b><br>Test class: com.testcase.tc.CompanyTest</td>
+<td></td>
+<td>12</td>
+<td>com.testcase.tc.CompanyTest@366e2eef</td></tr>
+<tr>
+<td title='com.testcase.tc.DashboardTest.doDashboardTest()'><b>doDashboardTest</b><br>Test class: com.testcase.tc.DashboardTest</td>
+<td></td>
+<td>8</td>
+<td>com.testcase.tc.DashboardTest@34b7bfc0</td></tr>
+<tr>
+<td title='com.testcase.tc.LoginTest.doLoginTest()'><b>doLoginTest</b><br>Test class: com.testcase.tc.LoginTest</td>
+<td></td>
+<td>7</td>
+<td>com.testcase.tc.LoginTest@67b6d4ae</td></tr>
+<tr>
+<td title='com.testcase.tc.MasterDataTest.doMasterTest()'><b>doMasterTest</b><br>Test class: com.testcase.tc.MasterDataTest</td>
 <td></td>
 <td>19</td>
-<td>com.testcase.tc.SKUTest@15975490</td></tr>
+<td>com.testcase.tc.MasterDataTest@6537cf78</td></tr>
+<tr>
+<td title='com.testcase.tc.UserTest.doUserTest()'><b>doUserTest</b><br>Test class: com.testcase.tc.UserTest</td>
+<td></td>
+<td>19</td>
+<td>com.testcase.tc.UserTest@6df97b55</td></tr>
+<tr>
+<td title='com.testcase.tc.UserTest.showUserlist()'><b>showUserlist</b><br>Test class: com.testcase.tc.UserTest</td>
+<td></td>
+<td>17</td>
+<td>com.testcase.tc.UserTest@6df97b55</td></tr>
 </table><p>
 </body>
 </html>

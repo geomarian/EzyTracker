@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite  thread-count="2" name="Suite" parallel="tests" verbose="3">
+<suite thread-count="1" name="Suite" parallel="tests" verbose="6">
 
 
 
@@ -8,22 +8,23 @@
 		<listener class-name="com.qa.ExtentListener.ExtentReporterNG" />
 	</listeners>
 	
-  <test name="Test" parallel="methods" thread-count="5">
+  <test name="Test" parallel="methods" thread-count="1">
   
   <parameter name="browser" value="chrome" />
     <classes>
-     <class name="com.testcase.tc.SKUTest"/>
-    
-      
- <!-- 
-    <class name="com.testcase.tc.LoginTest"/>
+  
+     
+     
+        <class name="com.testcase.tc.ConfigurationTest"/>
+  <class name="com.testcase.tc.MasterDataTest"/>
+       <class name="com.testcase.tc.LoginTest"/>
      
       <class name="com.testcase.tc.DashboardTest"/>
       <class name="com.testcase.tc.CompanyTest"/>
-     <class name="com.testcase.tc.UserTest"/>
-     
-     
-  
+  <class name="com.testcase.tc.UserTest"/>
+      <class name="com.testcase.tc.SKUTest"/>
+ <!-- 
+   
   -->     
       
     </classes>

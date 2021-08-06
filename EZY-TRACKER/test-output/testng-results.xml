@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="1" total="9" passed="8">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="36064" started-at="2021-08-03T11:41:39Z" finished-at="2021-08-03T11:42:15Z">
+  <suite name="Suite" duration-ms="331416" started-at="2021-08-06T06:31:34Z" finished-at="2021-08-06T06:37:05Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="36064" started-at="2021-08-03T11:41:39Z" finished-at="2021-08-03T11:42:15Z">
-      <class name="com.testcase.tc.SKUTest">
-        <test-method status="PASS" signature="setUpTest(java.lang.String)[pri:0, instance:com.testcase.tc.SKUTest@15975490]" name="setUpTest" is-config="true" duration-ms="16071" started-at="2021-08-03T17:11:39Z" finished-at="2021-08-03T17:11:55Z">
+    <test name="Test" duration-ms="331416" started-at="2021-08-06T06:31:34Z" finished-at="2021-08-06T06:37:05Z">
+      <class name="com.testcase.tc.UserTest">
+        <test-method status="PASS" signature="setUpTest(java.lang.String)[pri:0, instance:com.testcase.tc.UserTest@6df97b55]" name="setUpTest" is-config="true" duration-ms="14741" started-at="2021-08-06T12:04:16Z" finished-at="2021-08-06T12:04:31Z">
           <params>
             <param index="0">
               <value>
@@ -18,11 +18,207 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpTest -->
-        <test-method status="PASS" signature="newSKU()[pri:1, instance:com.testcase.tc.SKUTest@15975490]" name="newSKU" duration-ms="19032" started-at="2021-08-03T17:11:55Z" finished-at="2021-08-03T17:12:14Z">
+        <test-method status="PASS" signature="doUserTest()[pri:1, instance:com.testcase.tc.UserTest@6df97b55]" name="doUserTest" duration-ms="19779" started-at="2021-08-06T12:04:31Z" finished-at="2021-08-06T12:04:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doUserTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.testcase.tc.UserTest@6df97b55]" name="tearDown" is-config="true" duration-ms="1003" started-at="2021-08-06T12:04:51Z" finished-at="2021-08-06T12:04:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUpTest(java.lang.String)[pri:0, instance:com.testcase.tc.UserTest@6df97b55]" name="setUpTest" is-config="true" duration-ms="15601" started-at="2021-08-06T12:05:51Z" finished-at="2021-08-06T12:06:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method status="PASS" signature="deleteUser()[pri:2, instance:com.testcase.tc.UserTest@6df97b55]" name="deleteUser" duration-ms="22159" started-at="2021-08-06T12:06:07Z" finished-at="2021-08-06T12:06:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteUser -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.testcase.tc.UserTest@6df97b55]" name="tearDown" is-config="true" duration-ms="1036" started-at="2021-08-06T12:06:29Z" finished-at="2021-08-06T12:06:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUpTest(java.lang.String)[pri:0, instance:com.testcase.tc.UserTest@6df97b55]" name="setUpTest" is-config="true" duration-ms="16289" started-at="2021-08-06T12:06:30Z" finished-at="2021-08-06T12:06:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method status="PASS" signature="showUserlist()[pri:3, instance:com.testcase.tc.UserTest@6df97b55]" name="showUserlist" duration-ms="17946" started-at="2021-08-06T12:06:46Z" finished-at="2021-08-06T12:07:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- showUserlist -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.testcase.tc.UserTest@6df97b55]" name="tearDown" is-config="true" duration-ms="987" started-at="2021-08-06T12:07:04Z" finished-at="2021-08-06T12:07:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.testcase.tc.UserTest -->
+      <class name="com.testcase.tc.ConfigurationTest">
+        <test-method status="PASS" signature="setUpTest(java.lang.String)[pri:0, instance:com.testcase.tc.ConfigurationTest@617c74e5]" name="setUpTest" is-config="true" duration-ms="20389" started-at="2021-08-06T12:01:34Z" finished-at="2021-08-06T12:01:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method status="PASS" signature="ConfigTest()[pri:1, instance:com.testcase.tc.ConfigurationTest@617c74e5]" name="ConfigTest" duration-ms="31584" started-at="2021-08-06T12:01:54Z" finished-at="2021-08-06T12:02:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ConfigTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.testcase.tc.ConfigurationTest@617c74e5]" name="tearDown" is-config="true" duration-ms="1051" started-at="2021-08-06T12:02:26Z" finished-at="2021-08-06T12:02:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.testcase.tc.ConfigurationTest -->
+      <class name="com.testcase.tc.LoginTest">
+        <test-method status="PASS" signature="setUpTest(java.lang.String)[pri:0, instance:com.testcase.tc.LoginTest@67b6d4ae]" name="setUpTest" is-config="true" duration-ms="14268" started-at="2021-08-06T12:03:02Z" finished-at="2021-08-06T12:03:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method status="PASS" signature="doLoginTest()[pri:1, instance:com.testcase.tc.LoginTest@67b6d4ae]" name="doLoginTest" duration-ms="7190" started-at="2021-08-06T12:03:16Z" finished-at="2021-08-06T12:03:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doLoginTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.testcase.tc.LoginTest@67b6d4ae]" name="tearDown" is-config="true" duration-ms="1343" started-at="2021-08-06T12:03:23Z" finished-at="2021-08-06T12:03:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.testcase.tc.LoginTest -->
+      <class name="com.testcase.tc.CompanyTest">
+        <test-method status="PASS" signature="setUpTest(java.lang.String)[pri:0, instance:com.testcase.tc.CompanyTest@366e2eef]" name="setUpTest" is-config="true" duration-ms="14890" started-at="2021-08-06T12:03:48Z" finished-at="2021-08-06T12:04:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method status="PASS" signature="doCompanyTest()[pri:1, instance:com.testcase.tc.CompanyTest@366e2eef]" name="doCompanyTest" duration-ms="12114" started-at="2021-08-06T12:04:03Z" finished-at="2021-08-06T12:04:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doCompanyTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.testcase.tc.CompanyTest@366e2eef]" name="tearDown" is-config="true" duration-ms="1104" started-at="2021-08-06T12:04:15Z" finished-at="2021-08-06T12:04:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.testcase.tc.CompanyTest -->
+      <class name="com.testcase.tc.DashboardTest">
+        <test-method status="PASS" signature="setUpTest(java.lang.String)[pri:0, instance:com.testcase.tc.DashboardTest@34b7bfc0]" name="setUpTest" is-config="true" duration-ms="14171" started-at="2021-08-06T12:03:24Z" finished-at="2021-08-06T12:03:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method status="PASS" signature="doDashboardTest()[pri:1, instance:com.testcase.tc.DashboardTest@34b7bfc0]" name="doDashboardTest" duration-ms="8218" started-at="2021-08-06T12:03:39Z" finished-at="2021-08-06T12:03:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doDashboardTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.testcase.tc.DashboardTest@34b7bfc0]" name="tearDown" is-config="true" duration-ms="1070" started-at="2021-08-06T12:03:47Z" finished-at="2021-08-06T12:03:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.testcase.tc.DashboardTest -->
+      <class name="com.testcase.tc.MasterDataTest">
+        <test-method status="PASS" signature="setUpTest(java.lang.String)[pri:0, instance:com.testcase.tc.MasterDataTest@6537cf78]" name="setUpTest" is-config="true" duration-ms="14321" started-at="2021-08-06T12:02:27Z" finished-at="2021-08-06T12:02:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method status="PASS" signature="doMasterTest()[pri:1, instance:com.testcase.tc.MasterDataTest@6537cf78]" name="doMasterTest" duration-ms="19489" started-at="2021-08-06T12:02:41Z" finished-at="2021-08-06T12:03:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doMasterTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.testcase.tc.MasterDataTest@6537cf78]" name="tearDown" is-config="true" duration-ms="1041" started-at="2021-08-06T12:03:01Z" finished-at="2021-08-06T12:03:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.testcase.tc.MasterDataTest -->
+      <class name="com.testcase.tc.SKUTest">
+        <test-method status="PASS" signature="setUpTest(java.lang.String)[pri:0, instance:com.testcase.tc.SKUTest@3cbbc1e0]" name="setUpTest" is-config="true" duration-ms="14424" started-at="2021-08-06T12:04:52Z" finished-at="2021-08-06T12:05:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method status="FAIL" signature="newSKU()[pri:1, instance:com.testcase.tc.SKUTest@3cbbc1e0]" name="newSKU" duration-ms="44103" started-at="2021-08-06T12:05:06Z" finished-at="2021-08-06T12:05:50Z">
+          <exception class="org.openqa.selenium.support.ui.UnexpectedTagNameException">
+            <message>
+              <![CDATA[Element should have been "select" but was "span"
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'GEO', ip: '192.168.1.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+Driver info: driver.version: unknown]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.support.ui.UnexpectedTagNameException: Element should have been "select" but was "span"
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'GEO', ip: '192.168.1.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.<init>(Select.java:47)
+	at com.webapp.base.BaseClass.dropdown(BaseClass.java:34)
+	at com.webapp.base.SKU.SKUDetails(SKU.java:172)
+	at com.testcase.tc.SKUTest.newSKU(SKUTest.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.support.ui.UnexpectedTagNameException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- newSKU -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.testcase.tc.SKUTest@15975490]" name="tearDown" is-config="true" duration-ms="914" started-at="2021-08-03T17:12:14Z" finished-at="2021-08-03T17:12:15Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.testcase.tc.SKUTest@3cbbc1e0]" name="tearDown" is-config="true" duration-ms="1002" started-at="2021-08-06T12:05:50Z" finished-at="2021-08-06T12:05:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

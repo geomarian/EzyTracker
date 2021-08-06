@@ -9,7 +9,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public abstract  class Page {
 
-	WebDriver driver;
+	static WebDriver driver;
 	WebDriverWait wait;
 	
 	//taking only 1 variable i.e. driver
