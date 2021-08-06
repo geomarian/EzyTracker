@@ -4,29 +4,27 @@
 
 
 
-<listeners>
+	<listeners>
 		<listener class-name="com.qa.ExtentListener.ExtentReporterNG" />
 	</listeners>
-	
-  <test name="Test" parallel="methods" thread-count="1">
-  
-  <parameter name="browser" value="chrome" />
-    <classes>
-  
-     
-     
-        <class name="com.testcase.tc.ConfigurationTest"/>
-  <class name="com.testcase.tc.MasterDataTest"/>
-       <class name="com.testcase.tc.LoginTest"/>
-     
-      <class name="com.testcase.tc.DashboardTest"/>
-      <class name="com.testcase.tc.CompanyTest"/>
-  <class name="com.testcase.tc.UserTest"/>
-      <class name="com.testcase.tc.SKUTest"/>
- <!-- 
-   
-  -->     
-      
-    </classes>
-  </test> <!-- Test -->
+
+	<test name="Test" parallel="methods" thread-count="1">
+
+		<parameter name="browser" value="chrome" />
+		<classes>
+
+
+
+			<class name="com.testcase.tc.SKUTest" />
+			<class name="com.testcase.tc.ConfigurationTest" />
+			<class name="com.testcase.tc.MasterDataTest" />
+			<class name="com.testcase.tc.LoginTest" />
+			<class name="com.testcase.tc.DashboardTest" />
+			<class name="com.testcase.tc.CompanyTest" />
+			<class name="com.testcase.tc.UserTest" />
+
+			<!-- -->
+
+		</classes>
+	</test> <!-- Test -->
 </suite> <!-- Suite -->

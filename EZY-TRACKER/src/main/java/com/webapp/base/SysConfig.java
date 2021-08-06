@@ -12,23 +12,26 @@ public class SysConfig extends BaseClass {
 	}
 
 	By clickConfig = By.xpath("//p[contains(text(),'Config')]");
-	
+
 	By saveConfig = By.name("submitBtn");
-	
+
 	By clickUN = By.id("spnUserName");
-	
+
 	By clickLogOut = By.xpath("//a[contains(text(),' Logout')]");
-	
+
 	By clickMaster = By.xpath("//body/div[2]/aside[1]/div[1]/div[4]/div[1]/div[1]/nav[1]/ul[1]/li[9]/a[1]/p[1]/i[1]");
+
 	/**
 	 * @return the clickUN
 	 */
 	public WebElement getClickUN() {
 		return getElement(clickUN);
 	}
-	public WebElement getMaster(){
+
+	public WebElement getMaster() {
 		return getElement(clickMaster);
 	}
+
 	/**
 	 * @return the clickLogOut
 	 */
@@ -54,7 +57,7 @@ public class SysConfig extends BaseClass {
 		return getElement(saveConfig);
 	}
 
-	public SysConfig onlyConfig(){
+	public SysConfig onlyConfig() {
 		getMaster().click();
 		sleep();
 		getClickConfig().click();
@@ -66,7 +69,4 @@ public class SysConfig extends BaseClass {
 		return getInstance(SysConfig.class);
 	}
 
-
-	
-	
 }

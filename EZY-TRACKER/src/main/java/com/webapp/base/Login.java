@@ -51,7 +51,7 @@ public class Login extends BaseClass {
 		getUN().sendKeys(UN);
 		getPwd().sendKeys(Pwd);
 		getSubmitBtn().click();
-		
+
 		return getInstance(Dashboard.class);
 	}
 

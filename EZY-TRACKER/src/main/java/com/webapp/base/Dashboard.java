@@ -19,7 +19,7 @@ public class Dashboard extends BaseClass {
 	}
 
 	By header = By.xpath("//strong[contains(text(),'Copyright © 2021 Sales Person Tracking')]");
-	
+
 	// getter
 	public WebElement getHeader() {
 		return getElement(header);
@@ -34,12 +34,4 @@ public class Dashboard extends BaseClass {
 	}
 	//
 
-	
-	
-	
-	
-	}
-	
-	
-	
-
+}

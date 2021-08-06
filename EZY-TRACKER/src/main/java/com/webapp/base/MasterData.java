@@ -6,12 +6,11 @@ import org.openqa.selenium.WebElement;
 
 public class MasterData extends BaseClass {
 
-	
-
 	By header = By.xpath("//strong[contains(text(),'Copyright © 2021 Sales Person Tracking')]");
 	By clickMaster = By.xpath("//body/div[2]/aside[1]/div[1]/div[4]/div[1]/div[1]/nav[1]/ul[1]/li[9]/a[1]/p[1]/i[1]");
 	By clickState = By.xpath("//p[contains(text(),'State')]");
 	By clickCity = By.xpath("//p[contains(text(),'City')]");
+
 	/**
 	 * @return the header
 	 */
@@ -19,19 +18,22 @@ public class MasterData extends BaseClass {
 		super(driver);
 		// TODO Auto-generated constructor stub
 	}
+
 	public WebElement getHeader() {
 		return getElement(header);
 	}
-	
-	public WebElement getMaster(){
+
+	public WebElement getMaster() {
 		return getElement(clickMaster);
 	}
+
 	/**
 	 * @return the clickState
 	 */
 	public WebElement getClickState() {
 		return getElement(clickState);
 	}
+
 	/**
 	 * @return the clickCity
 	 */
@@ -39,7 +41,6 @@ public class MasterData extends BaseClass {
 		return getElement(clickCity);
 	}
 	// getter
-	
 
 	public String getCompanyTitle() {
 		return getPageTitle();
@@ -49,8 +50,7 @@ public class MasterData extends BaseClass {
 		return getPageHeader(header);
 	}
 
-	
-	public MasterData MasterDataList(){
+	public MasterData MasterDataList() {
 		getMaster().click();
 		sleep();
 		getClickState().click();

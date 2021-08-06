@@ -26,7 +26,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseTest {
 
-	 WebDriver driver;
+	WebDriver driver;
 
 	// we added page here so that we can inherit this pgae class refernece in
 	// login test & others
@@ -47,30 +47,27 @@ public class BaseTest {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		
-		//Dropdown
-	
+
+		// Dropdown
+
 	}
 
 	// Sleep time
-		public static void sleep(){
-			try{
-				TimeUnit.SECONDS.sleep(3);
-			} catch(InterruptedException ie){
-				Thread.currentThread().interrupt();
-			}
+	public static void sleep() {
+		try {
+			TimeUnit.SECONDS.sleep(3);
+		} catch (InterruptedException ie) {
+			Thread.currentThread().interrupt();
 		}
-		//
-		/*
-		 * 
-		 * Select drop down
-		 * 
-		 * 
-		 */
-	
-		
-		
-		
+	}
+	//
+	/*
+	 * 
+	 * Select drop down
+	 * 
+	 * 
+	 */
+
 	@BeforeMethod
 	// getting browser from testng
 	@Parameters(value = { "browser" })
@@ -99,6 +96,8 @@ public class BaseTest {
 		 * object like , page = new Page(); because it is abstract class now for
 		 * that to call constructor of page class we have to use with the help
 		 * of Child class of the PageClass of the abstract class.
+		 * 
+		 * & E driver for Event listeener
 		 */
 		e_driver = new EventFiringWebDriver(driver);
 		eventListener = new WebEventListener();

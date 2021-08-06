@@ -9,26 +9,27 @@ public class Company extends BaseClass {
 	By header = By.xpath("//strong[contains(text(),'Copyright © 2021 Sales Person Tracking')]");
 
 	By clickComp = By.xpath("//p[contains(text(),'Company')]");
+
 	/**
 	 * @return the clickComp
 	 */
-	public WebElement  getClickComp() {
+	public WebElement getClickComp() {
 		return getElement(clickComp);
 	}
 
 	By Addr = By.id("address");
 	By CINNo = By.name("sCinNo");
 	By TANNo = By.name("sTanNo");
-	
+
 	By updateBtn = By.xpath("//button[contains(text(),'Update')]");
 
-	public WebElement clickUpdate(){
+	public WebElement clickUpdate() {
 		return getElement(updateBtn);
 	}
-	
+
 	/**
 	 * @return the cINNo
-	  */
+	 */
 	public WebElement getCINNo() {
 		return getElement(CINNo);
 	}
@@ -66,24 +67,16 @@ public class Company extends BaseClass {
 	}
 	//
 
-	public Company CompanyDetail(String Addr, String TANNo, String CINNo){
+	public Company CompanyDetail(String Addr, String TANNo, String CINNo) {
 		getClickComp().click();
 		getAddr().sendKeys(Addr);
 		getTANNo().sendKeys(TANNo);
 		getCINNo().sendKeys(CINNo);
 		clickUpdate().click();
 		System.out.println("update button clicked");
-		//will return landing page class object
+		// will return landing page class object
 		return getInstance(Company.class);
-		
-		
-		
+
 	}
-	//same method name with parameter & non-parameter is method overloading
-	
-//	public void CompanyDetails(){
-//		getCINNo().sendKeys("");
-//		getTANNo().sendKeys("");
-//		
-//	}
+
 }

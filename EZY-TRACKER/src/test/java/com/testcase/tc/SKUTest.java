@@ -3,8 +3,6 @@
  */
 package com.testcase.tc;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 
 import com.webapp.base.Dashboard;
@@ -25,7 +23,6 @@ public class SKUTest extends BaseTest {
 		String headerHome = homepage.getDashboardHeader();
 		System.out.println(headerHome);
 
-
 		SKU skus = page.getInstance(SKU.class).SKUDetails();
 		sleep();
 		String com = skus.getPageTitle();
@@ -41,8 +38,8 @@ public class SKUTest extends BaseTest {
 		// it will check whether will get dashboard header
 		String headerHome = homepage.getDashboardHeader();
 		System.out.println(headerHome);
-sleep();
-		
+		sleep();
+
 		SKU skuList = page.getInstance(SKU.class).SKUList();
 
 		String title = skuList.getPageTitle();

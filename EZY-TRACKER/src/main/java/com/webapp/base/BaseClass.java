@@ -28,16 +28,14 @@ public class BaseClass extends Page {
 	/*
 	 * dropdown options
 	 */
-	
-	public static void dropdown(WebElement element, String value){
-		
+
+	public static void dropdown(WebElement element, String value) {
+
 		Select objSelect = new Select(element);
-		
+
 		objSelect.selectByVisibleText(value);
 	}
 
-	
-	
 	@Override
 
 	public String getPageTitle() {
