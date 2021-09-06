@@ -18,7 +18,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 
-import com.qa.util.WebEventListener;
+//import com.qa.util.WebEventListener;
 import com.webapp.base.BaseClass;
 import com.webapp.base.Page;
 
@@ -32,7 +32,7 @@ public class BaseTest {
 	// login test & others
 	public Page page;
 	public static Properties prop;
-	public static WebEventListener eventListener;
+	//public static WebEventListener eventListener;
 	public static EventFiringWebDriver e_driver;
 
 	public BaseTest() {
@@ -100,8 +100,8 @@ public class BaseTest {
 		 * & E driver for Event listeener
 		 */
 		e_driver = new EventFiringWebDriver(driver);
-		eventListener = new WebEventListener();
-		e_driver.register(eventListener);
+	//	eventListener = new WebEventListener();
+	//	e_driver.register(eventListener);
 		driver = e_driver;
 
 		page = new BaseClass(driver);

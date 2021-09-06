@@ -1,68 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="1" guice-stage="DEVELOPMENT" verbose="6" name="Failed suite [Suite]" parallel="tests">
-  <parameter name="browser" value="chrome"/>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="6">
   <listeners>
     <listener class-name="com.qa.ExtentListener.ExtentReporterNG"/>
   </listeners>
-  <test thread-count="1" name="Test" parallel="methods">
+  <test thread-count="1" parallel="methods" name="Test(failed)" verbose="6">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.testcase.tc.ConfigurationTest"/>
-      <class name="com.testcase.tc.MasterDataTest"/>
-      <class name="com.testcase.tc.LoginTest"/>
-      <class name="com.testcase.tc.DashboardTest"/>
-      <class name="com.testcase.tc.CompanyTest"/>
-      <class name="com.testcase.tc.UserTest"/>
-      <class name="com.testcase.tc.SKUTest"/>
-    </classes>
-  </test> <!-- Test -->
-  <test name="Test(failed)" parallel="methods">
-    <parameter name="browser" value="chrome"/>
-    <classes>
-      <class name="com.testcase.tc.DashboardTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="setUpTest"/>
-        </methods>
-      </class> <!-- com.testcase.tc.DashboardTest -->
       <class name="com.testcase.tc.SKUTest">
         <methods>
           <include name="tearDown"/>
-          <include name="newSKU"/>
           <include name="setUpTest"/>
+          <include name="newSKU"/>
         </methods>
       </class> <!-- com.testcase.tc.SKUTest -->
       <class name="com.testcase.tc.ConfigurationTest">
         <methods>
+          <include name="ConfigTest"/>
           <include name="tearDown"/>
           <include name="setUpTest"/>
         </methods>
       </class> <!-- com.testcase.tc.ConfigurationTest -->
-      <class name="com.testcase.tc.MasterDataTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="setUpTest"/>
-        </methods>
-      </class> <!-- com.testcase.tc.MasterDataTest -->
-      <class name="com.testcase.tc.UserTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="setUpTest"/>
-        </methods>
-      </class> <!-- com.testcase.tc.UserTest -->
-      <class name="com.testcase.tc.LoginTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="setUpTest"/>
-        </methods>
-      </class> <!-- com.testcase.tc.LoginTest -->
       <class name="com.testcase.tc.CompanyTest">
         <methods>
+          <include name="doCompanyTest"/>
           <include name="tearDown"/>
           <include name="setUpTest"/>
         </methods>
       </class> <!-- com.testcase.tc.CompanyTest -->
+      <class name="com.testcase.tc.MasterDataTest">
+        <methods>
+          <include name="doMasterTest"/>
+          <include name="tearDown"/>
+          <include name="setUpTest"/>
+        </methods>
+      </class> <!-- com.testcase.tc.MasterDataTest -->
+      <class name="com.testcase.tc.LoginTest">
+        <methods>
+          <include name="doLoginTest"/>
+          <include name="tearDown"/>
+          <include name="setUpTest"/>
+        </methods>
+      </class> <!-- com.testcase.tc.LoginTest -->
+      <class name="com.testcase.tc.UserTest">
+        <methods>
+          <include name="showUserlist"/>
+          <include name="tearDown"/>
+          <include name="deleteUser"/>
+          <include name="setUpTest"/>
+          <include name="doUserTest"/>
+        </methods>
+      </class> <!-- com.testcase.tc.UserTest -->
+      <class name="com.testcase.tc.DashboardTest">
+        <methods>
+          <include name="doDashboardTest"/>
+          <include name="tearDown"/>
+          <include name="setUpTest"/>
+        </methods>
+      </class> <!-- com.testcase.tc.DashboardTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
